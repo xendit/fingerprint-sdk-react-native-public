@@ -7,7 +7,6 @@
  */
 
 import React from 'react';
-import type {Node} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -17,6 +16,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import FingerprintSdk from 'xendit-fingerprint-sdk-rn';
 
 import {
   Colors,
@@ -26,7 +26,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const Section = ({children, title}): Node => {
+const Section = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
@@ -52,7 +52,13 @@ const Section = ({children, title}): Node => {
   );
 };
 
-const App: () => Node = () => {
+const App = () => {
+  React.useEffect(() => {
+    FingerprintSdk.init('MY_PUBLIC_API_KEY').then(sessionID => {
+      console.log('Session ID: ', sessionID);
+      FingerprintSdk.scan();
+    });
+  })
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {

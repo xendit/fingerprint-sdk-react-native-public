@@ -6527,6 +6527,11 @@ xcode@^2.0.0:
     simple-plist "^1.0.0"
     uuid "^3.3.2"
 
+xendit-fingerprint-sdk-rn@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/xendit-fingerprint-sdk-rn/-/xendit-fingerprint-sdk-rn-1.0.1.tgz#c1e11098485b97f9f1a019debf85dd35a83f08d1"
+  integrity sha512-tpFxqbvN/DMWgXaD7Ik36NxBX23Afrstz6sUYroe1vQCcTpWaaP7fUu2OKUe398bYQPKxCwgTaEg4E3jAMnVdg==
+
 xml-name-validator@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-3.0.0.tgz#6ae73e06de4d8c6e47f9fb181f78d648ad457c6a"
