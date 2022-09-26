@@ -1,0 +1,11 @@
+openapi: 3.0.1
+info:
+  title: fingerprint-sdk-react-native-public
+  description: fingerprint-sdk-react-native-public
+  x-cortex-git:
+    github:
+      repository: xendit/fingerprint-sdk-react-native-public
+  x-cortex-tag: fingerprint-sdk-react-native-public
+  x-cortex-owners:
+  - type: GROUP
+    name: xendit/fraud
